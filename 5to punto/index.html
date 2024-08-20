@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script> <!-- Enlace al archivo JavaScript -->
+    <title>Taller de Ejercicios JS</title>
+</head>
+<body>
+    <h1>Taller de Ejercicios JS</h1>
+    <p> <b>Punto numero 4:</b> 
+        Digita el ingreso del precio de un producto y se debe calcular el IVA, mostrar cuanto es el
+        IVA que se agrega, mostrar el precio del producto sin IVA y el total a pagar.
+        </p>
+
+        <script>
+            let PrecioDelProducto = Number(prompt("Digite el Precio del Producto"));
+            let IVA = PrecioDelProducto * 0.19; 
+            let PrecioSinIVA = PrecioDelProducto; 
+            let TotalAPagar = PrecioDelProducto + IVA;
+
+        document.write(
+            "<br>" +
+            "El valor del IVA en el Producto es de: " + IVA + "<br>" +
+            "El valor del Producto sin IVA es de: " + PrecioSinIVA + "<br>" +
+            "El Total a Pagar es de: " + TotalAPagar + "<br>"
+            );
+        </script>
+        
+</body>
+</html>
